@@ -367,13 +367,41 @@ footer div p {
 }
 
 .mensaje {
-  background-color: rgba(0, 0, 0, 0.563);
+  background-color: rgba(0, 0, 0, 0.052);
   padding: 5rem;
   margin: 10rem;
   border-radius: 3rem;
-  width: 80vw;
+  width: 70%;
   height: 39rem;
-  box-shadow: 0.3rem 0.3rem 0.8rem #f61243;
+  box-shadow: 0.1rem 0.1rem 2rem #ffffff;
+}
+
+.mensaje h1 {
+  color: #fff;
+  margin: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.mensaje h3 {
+  color: #fff;
+  font-weight: 300;
+}
+
+.campo {
+  background-color: #00000061;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 60%;
+  height: 2rem;
+  margin: 0.5rem;
+  border: thin solid #000000;
+  border-radius: 0.3125rem;
+  box-shadow: 0.1rem 0.1rem 0.4rem #f61243;
+}
+
+.campo textarea {
+  height: 10rem;
 }
 
 /* ********************MEDIA******************** */
