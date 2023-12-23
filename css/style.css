@@ -400,8 +400,15 @@ footer div p {
   box-shadow: 0.1rem 0.1rem 0.4rem #f61243;
 }
 
-.campo textarea {
-  height: 10rem;
+.btn-1 {
+  display: inline-block;
+  padding: 13px 35px;
+  background-color: #f50a3d;
+  color: #ededed;
+  font-size: 1rem;
+  margin-top: 25px;
+  border: 0;
+  cursor: pointer;
 }
 
 /* ********************MEDIA******************** */
