@@ -6,9 +6,9 @@
 }
 
 header {
+  background-color: #00000069;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.623);
-  height: 56px;
+  height: 3.5rem;
   position: sticky;
   box-shadow: 0rem 0.0625rem 0.3125rem rgb(246, 18, 67);
   display: flex;
@@ -34,10 +34,21 @@ body {
 }
 
 .nav-container {
-  width: 95%;
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.check-btn {
+  font-size: 30px;
+  line-height: 3.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
 }
 
 .nav-container ul {
@@ -45,6 +56,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  gap: 3rem;
 }
 
 .nav-container ul li a {
@@ -52,7 +64,7 @@ body {
   text-decoration: none;
   font-size: 24px;
   font-weight: 400;
-  padding: 32px;
+  line-height: 3.5;
 }
 
 .nav-container ul li a:hover {
@@ -87,7 +99,9 @@ body {
   padding: 16px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .hero article h1 {
@@ -331,7 +345,7 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  z-index: 33;
+  z-index: 1;
 }
 
 footer div p {
@@ -349,7 +363,7 @@ footer div p {
 }
 
 .contactos img:hover {
-  width: 48px;
+  width: 36px;
   filter: drop-shadow(10px 8px 6px #f61243);
   height: auto;
   transition-duration: 1s;
@@ -358,25 +372,28 @@ footer div p {
 /* ********************CONTACTO******************** */
 
 .contacto {
+  /* background-color: #312f2f; */
   width: 100%;
-  height: 100vh;
+  height: 1500px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.mensaje {
-  background-color: rgba(0, 0, 0, 0.052);
+.mensaje,
+.datos-container {
+  background-color: rgba(0, 0, 0, 0.041);
   padding: 5rem;
-  margin: 10rem;
+  margin-bottom: 3rem;
   border-radius: 3rem;
   width: 70%;
   height: 39rem;
-  box-shadow: 0.1rem 0.1rem 2rem #ffffff;
+  box-shadow: 0.1rem 0.1rem 1rem #000000;
 }
 
-.mensaje h1 {
+.mensaje h1,
+.datos-de-contacto h2 {
   color: #fff;
   margin: 1.5rem;
   font-size: 2.5rem;
@@ -393,7 +410,7 @@ footer div p {
   color: #fff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 60%;
-  height: 2rem;
+  height: 2.5rem;
   margin: 0.5rem;
   border: thin solid #000000;
   border-radius: 0.3125rem;
@@ -403,12 +420,33 @@ footer div p {
 .btn-1 {
   display: inline-block;
   padding: 13px 35px;
-  background-color: #f50a3d;
-  color: #ededed;
-  font-size: 1rem;
-  margin-top: 25px;
-  border: 0;
+  background-color: #025dc5;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-left: 0.75rem;
+  border: medium solid #002752;
+  border-radius: 0.5rem;
   cursor: pointer;
+}
+
+.datos-container {
+  box-shadow: 0.1rem 0.1rem 1rem #000000;
+
+  height: 25rem;
+}
+
+.datos-de-contacto h3 {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.datos-de-contacto p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #fff;
 }
 
 /* ********************MEDIA******************** */
@@ -416,6 +454,13 @@ footer div p {
 @media (max-width: 1024px) {
   .cart {
     margin-right: 1rem;
+  }
+  .cart img {
+    width: 2rem;
+  }
+
+  .nav-container ul li a {
+    font-size: 1.2rem;
   }
 
   .hero {
@@ -443,11 +488,98 @@ footer div p {
     width: auto;
     height: 35px;
   }
+  /* contacto */
+
+  .contacto {
+    height: 62.5rem;
+    margin-top: 3rem;
+  }
+  .mensaje {
+    width: 90%;
+    height: 30rem;
+  }
+
+  .mensaje,
+  .datos-container {
+    padding: 3rem;
+  }
+
+  .mensaje,
+  .datos-de-contacto h3 {
+    font-size: 1, 5rem;
+    color: #fff;
+    font-weight: 300;
+  }
+
+  .campo {
+    width: 70%;
+    height: 2rem;
+  }
+
+  .datos-container {
+    width: 90%;
+    height: 18rem;
+  }
+  .datos-de-contacto {
+    width: 100%;
+    height: 100%;
+  }
+
+  .mensaje h1,
+  .datos-de-contacto h2 {
+    color: #fff;
+    margin: 1rem;
+    font-size: 2rem;
+    font-weight: 300;
+  }
 }
 
 @media (max-width: 768px) {
+  .cart img {
+    width: 30px;
+  }
+
+  .check-btn {
+    display: block;
+  }
+
+  .nav-container {
+    display: block;
+    background-color: none;
+  }
+
+  .nav-container ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000e3;
+    top: 3.5rem;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5seg;
+    display: block;
+  }
+
+  .nav-container ul li {
+    margin: 20px 0;
+    line-height: 30px;
+  }
+
+  .nav-container ul li a {
+    font-size: 25px;
+  }
+
+  .nav-container a:hover,
+  .nav-container a.active {
+    background-color: none;
+    color: #f61243;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
   .cards-container {
-    /* background-color: #f61243; */
     width: 100%;
     height: auto;
     margin-top: 4.8px;
@@ -495,5 +627,58 @@ footer div p {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
+  header {
+    max-width: 100vw;
+  }
+
+  .check-btn {
+    width: 80%;
+    margin-left: 1rem;
+  }
+  .cart {
+    width: 10%;
+  }
+
+  .cart img {
+    width: 30px;
+  }
+
+  .hero article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    top: -1rem;
+  }
+
+  .hero article p {
+    width: 80%;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+  }
+
+  body {
+    background: linear-gradient(#000, #000000de, #f61243);
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    width: 100vw;
+  }
+
+  .img img {
+    height: 10rem;
+  }
+
+  .logos img {
+    height: 1.2rem;
+    gap: 1rem;
+  }
 }
