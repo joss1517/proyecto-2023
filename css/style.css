@@ -633,6 +633,11 @@ footer div p {
     border-radius: 0.8rem;
     position: cemter;
   }
+
+  .mensaje,
+  .datos-container {
+    border-radius: 1.5rem;
+  }
 }
 
 @media (max-width: 425px) {
