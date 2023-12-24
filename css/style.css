@@ -7,7 +7,7 @@
 
 header {
   background-color: #00000069;
-  width: 100%;
+  width: 100vw;
   height: 3.5rem;
   position: sticky;
   box-shadow: 0rem 0.0625rem 0.3125rem rgb(246, 18, 67);
@@ -115,6 +115,7 @@ body {
 }
 
 .hero article p {
+  width: 80%;
   color: #fff;
   font-weight: 300;
   font-size: 1.5rem;
@@ -337,7 +338,7 @@ body {
 /* ***************************Footer***************************** */
 footer {
   background-color: rgba(0, 0, 0, 0.623);
-  width: 100%;
+  width: 100vw;
   height: 48px;
   bottom: 0;
   position: fixed;
@@ -535,6 +536,13 @@ footer div p {
 }
 
 @media (max-width: 768px) {
+  .hero {
+    width: 100%;
+  }
+
+  .hero article p {
+    width: 100%;
+  }
   .cart img {
     width: 30px;
   }
@@ -643,19 +651,21 @@ footer div p {
   .cart img {
     width: 30px;
   }
+  .hero {
+    height: 12.5rem;
+  }
 
   .hero article {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0;
+    justify-content: flex-start;
+    margin-top: 5rem;
     padding: 0;
     top: -1rem;
   }
 
   .hero article h1 {
     margin: 0;
+    margin-bottom: 2rem;
     padding: 0.625rem;
     font-size: 3rem;
     text-shadow: 0rem 0rem 0.3rem #f61243, 0rem 0rem 0.8rem #f61243,
@@ -692,5 +702,19 @@ footer div p {
 
   .pie-de-pagina p {
     font-size: 1.8rem;
+  }
+
+  .campo {
+    width: 90%;
+  }
+
+  .mensaje,
+  .datos-container {
+    border-radius: 1rem;
+  }
+
+  .mensaje h3,
+  .datos-de-contacto p {
+    font-size: 1rem;
   }
 }
