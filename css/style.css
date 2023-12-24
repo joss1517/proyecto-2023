@@ -654,6 +654,14 @@ footer div p {
     top: -1rem;
   }
 
+  .hero article h1 {
+    margin: 0;
+    padding: 0.625rem;
+    font-size: 3rem;
+    text-shadow: 0rem 0rem 0.3rem #f61243, 0rem 0rem 0.8rem #f61243,
+      0rem 0rem 1rem #f61243, 0rem 0rem 2rem #f61243;
+  }
+
   .hero article p {
     width: 80%;
     font-size: 1.2rem;
@@ -679,6 +687,10 @@ footer div p {
 
   .logos img {
     height: 1.2rem;
-    gap: 1rem;
+    margin: 15px;
+  }
+
+  .pie-de-pagina p {
+    font-size: 1.8rem;
   }
 }
