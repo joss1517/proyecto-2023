@@ -357,7 +357,7 @@ body {
 }
 
 .div-nosotros img {
-  width: 50rem;
+  width: 100%;
   border-radius: 0.5rem 5rem 0.5rem 5rem;
 }
 
@@ -586,6 +586,12 @@ footer div p {
     margin: 1rem;
     font-size: 2rem;
     font-weight: 300;
+  }
+
+  .nos-container {
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
   }
 }
 
