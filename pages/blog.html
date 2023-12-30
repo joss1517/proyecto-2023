@@ -10,10 +10,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300;400;600;800&display=swap" rel="stylesheet">
 
-  <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
+  <!-- CDN BOOSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
 
-  <title>ipunto</title>
-  <link rel="stylesheet" href="../css/style.css">
+<link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
+
+<title>ipunto</title>
+<link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -44,6 +49,75 @@
     </nav>
   </header>
 
+  <article class="blog-container">
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../assets/img/01.webp" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="descripcion">Instrucciones de instalación</h5>
+            <p class="descripcion-p">Frote firme y uniformemente el vinilo con el fin que se adhiera mejor. Puedes usar una espatula o tarjeta.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/img/02.webp" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="descripcion">Instrucciones de instalación</h5>
+            <p class="descripcion-p">Utilice cinta de enmascarar o vinilo para ubicarlo en el sitio que desea.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/img/03.webp" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="descripcion">Instrucciones de instalación</h5>
+            <p class="descripcion-p">Retire el papel blanco de soporte. Si el vinilo es grande remueva parcialmente el soporte mientras va fijando el
+              adhesivo a la superficie.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/img/04.webp" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="descripcion">Instrucciones de instalación</h5>
+            <p class="descripcion-p">Frote el vinilo con ayuda de la espatula o tarjeta(puedes usar un paño limpio o la mano).</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/img/05.webp" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="descripcion">Instrucciones de instalación</h5>
+            <p class="descripcion-p">Retire cuidadosamente el papel transfer</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/img/06.webp" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="descripcion">Instrucciones de instalación</h5>
+            <p class="descripcion-p">Rectifique que el vinilo haya bien adherido.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </article>
+
   <footer>
     <div>
       <p>© 2023 ipunto</p>
@@ -58,6 +132,8 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -29,8 +29,9 @@ header {
 
 body {
   background: linear-gradient(#000, #000000de, #f61243);
+  background-repeat: no-repeat;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .nav-container {
@@ -388,6 +389,29 @@ body {
   color: #fff;
   margin-top: 2rem;
 }
+/* ---------------------------BLOG------------------------------- */
+
+.blog-container {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+}
+
+.descripcion,
+.descripcion-p {
+  color: #000;
+  font-size: 1.5rem;
+}
+
+.descripcion {
+  font-size: 2rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #000;
+}
 
 /* ---------------------------Footer----------------------------- */
 footer {
@@ -418,13 +442,13 @@ footer div p {
 }
 
 .contactos img:hover {
-  width: 36px;
-  filter: drop-shadow(10px 8px 6px #f61243);
+  width: 30px;
+  filter: drop-shadow(3px 3px 5px #f61243);
   height: auto;
-  transition-duration: 1s;
+  transition-duration: 5ms;
 }
 
-/* ********************CONTACTO******************** */
+/* ------------------------------CONTACTO-------------------------------- */
 
 .contacto {
   /* background-color: #312f2f; */
@@ -609,6 +633,13 @@ footer div p {
   .info-nosotros {
     width: 100%;
   }
+
+  .blog-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -725,6 +756,23 @@ footer div p {
     margin-left: auto;
     margin-right: auto;
     border-radius: 0.3125rem 3rem 0.3125rem 3rem;
+  }
+
+  .blog-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+  }
+
+  .descripcion,
+  .descripcion-p {
+    color: #000;
+    font-size: 1rem;
+  }
+
+  .descripcion {
+    font-size: 1.5rem;
   }
 }
 
@@ -845,6 +893,23 @@ footer div p {
   .info-nosotros aside p {
     width: 100;
     font-size: 1rem;
+  }
+
+  .blog-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+  }
+
+  .descripcion,
+  .descripcion-p {
+    color: #000;
+    font-size: 1rem;
+  }
+
+  .descripcion {
+    font-size: 1.5rem;
   }
 }
 
