@@ -250,7 +250,7 @@ body {
   height: 48px;
 }
 
-/* ***********************Tienda********************************* */
+/* --------------------------------Tienda-------------------------------- */
 .store-container {
   width: 96%;
   display: grid;
@@ -261,6 +261,7 @@ body {
   margin-top: 3rem;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 5rem;
 }
 
 .card-store {
@@ -335,9 +336,62 @@ body {
   opacity: 1;
   pointer-events: auto;
 }
-/* ***************************Footer***************************** */
+
+/* ---------------------------Nosotros--------------------------- */
+.nos-container {
+  /* background-color: #002752; */
+  width: 100%;
+  height: 100vh;
+  padding: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.div-nosotros {
+  /* background-color: #00e2d7; */
+  width: 45%;
+  height: auto;
+}
+
+.div-nosotros img {
+  width: 50rem;
+  border-radius: 0.5rem 5rem 0.5rem 5rem;
+}
+
+.info-nosotros {
+  width: 45%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.info-nosotros aside {
+  /* background-color: #000000; */
+  width: 100%;
+  height: 100%;
+}
+
+.info-nosotros img {
+  width: 22rem;
+  filter: drop-shadow(5px 5px 1.5rem #000000);
+  margin-bottom: 3rem;
+}
+
+.info-nosotros aside p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+/* ---------------------------Footer----------------------------- */
 footer {
-  background-color: rgba(0, 0, 0, 0.623);
+  background-color: rgba(0, 0, 0, 0.683);
   width: 100vw;
   height: 48px;
   bottom: 0;
@@ -686,6 +740,10 @@ footer div p {
     color: #ffffff;
   }
 
+  .fondo {
+    background: #000000e1;
+  }
+
   body {
     background: linear-gradient(#000, #000000de, #f61243);
     width: 100%;
@@ -721,5 +779,23 @@ footer div p {
   .mensaje h3,
   .datos-de-contacto p {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero article {
+    /* margin: 0; */
+    margin-bottom: 3rem;
+  }
+
+  .cards-container {
+    margin-top: 8rem;
+  }
+  .cards-container h2 {
+    font-size: 3rem;
+  }
+
+  .cards div img {
+    height: 9rem;
   }
 }
