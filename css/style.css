@@ -413,6 +413,36 @@ body {
   background-color: #000;
 }
 
+.video-blog {
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.video-text {
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  margin: 2rem;
+  text-shadow: 0rem 0rem 0.625rem #f61243, 0rem 0rem 1.25rem #f61243,
+    0rem 0rem 2.5rem #f61243, 0rem 0rem 5rem #f61243;
+}
+
+.video {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+.video iframe {
+  border-radius: 1rem;
+  min-width: 30%;
+  margin-top: 1rem;
+}
+
 /* ---------------------------Footer----------------------------- */
 footer {
   background-color: rgba(0, 0, 0, 0.683);
