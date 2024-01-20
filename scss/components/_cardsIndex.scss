@@ -1,0 +1,64 @@
+.cards-container {
+  width: 100%;
+  height: auto;
+  margin-top: 4.8px;
+  @include flex(row, space-evenly, space-around);
+  flex-wrap: wrap;
+  z-index: auto;
+}
+
+.informacion-1 {
+  width: 100%;
+
+  h2 {
+    font-size: 5rem;
+    font-weight: 200;
+    color: map-get($color, blanco);
+    text-align: center;
+    text-decoration: solid;
+  }
+}
+
+.cards {
+  width: 28rem;
+  height: 240px;
+  box-shadow: 0.0437rem 0.0625rem 0.3125rem map-get($color, blanco);
+  border-radius: 16px;
+  margin: 32px;
+  @include flex(row, space-between, center);
+}
+
+.informacion {
+  width: 50%;
+  @include flex(column, space-around, center);
+
+  h2 {
+    color: map-get($color, blanco);
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  p {
+    width: 90%;
+    height: 60%;
+    color: map-get($color, blanco);
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 200;
+    margin: 8px;
+  }
+}
+
+.img {
+  width: 45%;
+  height: 100;
+  padding: auto;
+
+  img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 16px;
+  }
+}

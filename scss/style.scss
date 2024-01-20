@@ -1,0 +1,25 @@
+@import "./utilities/mixins";
+@import "./utilities/maps";
+@import "./utilities/variables";
+
+@import "./base/reset";
+@import "./base/bodyIndex";
+@import "./base/body";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/main";
+
+@import "./components/cardsIndex";
+@import "./components/boton";
+@import "./components/cardsTienda";
+@import "./components/botonTienda";
+@import "./components/cardNosotros";
+@import "./components/carousel";
+@import "./components/iframe";
+@import "./components/cardsContacto";
+@import "./components/botonContacto";
+
+@import "./layout/mediaQ/media1024";
+@import "./layout/mediaQ/media768";
+@import "./layout/mediaQ/media425";
+@import "./layout/mediaQ/media320";

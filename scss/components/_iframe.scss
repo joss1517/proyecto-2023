@@ -1,0 +1,28 @@
+.video-blog {
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.video-text {
+  text-align: center;
+  color: map-get($color, blanco);
+  font-weight: 600;
+  margin: 2rem;
+  text-shadow: 0rem 0rem 0.625rem map-get($color, rojo),
+    0rem 0rem 1.25rem map-get($color, rojo),
+    0rem 0rem 2.5rem map-get($color, rojo), 0rem 0rem 5rem map-get($color, rojo);
+}
+
+.video {
+  @include flex(row, space-evenly, center);
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  iframe {
+    border-radius: 1rem;
+    min-width: 30%;
+    margin-top: 1rem;
+  }
+}

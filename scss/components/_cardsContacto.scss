@@ -1,0 +1,67 @@
+.contacto {
+  width: 100%;
+  height: 1500px;
+  @include flex(column, space-evenly, center);
+}
+
+.mensaje {
+  background: transparent;
+  backdrop-filter: blur(5px);
+  padding: 5rem;
+  margin-bottom: 3rem;
+  border-radius: 3rem;
+  width: 70%;
+  height: 39rem;
+  box-shadow: 0.1rem 0.1rem 1rem map-get($color, negro);
+
+  h1 {
+    color: map-get($color, blanco);
+    margin: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+
+  h3 {
+    color: map-get($color, blanco);
+    font-weight: 300;
+  }
+}
+
+.datos-container {
+  @extend .mensaje;
+  box-shadow: 0.1rem 0.1rem 1rem map-get($color, negro);
+  height: 25rem;
+
+  span {
+    h2 {
+      color: map-get($color, blanco);
+      margin: 1.5rem;
+      font-size: 2.5rem;
+      font-weight: 400;
+    }
+
+    h3 {
+      font-size: 2rem;
+      color: map-get($color, blanco);
+      font-weight: 400;
+    }
+
+    p {
+      font-size: 1.3rem;
+      font-weight: 300;
+      color: map-get($color, blanco);
+    }
+  }
+}
+
+.campo {
+  background-color: $bgcHeader;
+  color: map-get($color, blanco);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 60%;
+  height: 2.5rem;
+  margin: 0.5rem;
+  border: thin solid map-get($color, negro);
+  border-radius: 0.3125rem;
+  box-shadow: 0.1rem 0.1rem 0.4rem map-get($color, negro);
+}

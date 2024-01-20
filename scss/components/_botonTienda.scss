@@ -1,0 +1,6 @@
+.btn {
+  background-color: $bgcHeader;
+  font-size: 1.2rem;
+  color: map-get($color, blanco);
+  box-shadow: 0.0625rem 0.0625rem 0.1875rem map-get($color, rojo);
+}

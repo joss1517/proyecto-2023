@@ -1,0 +1,112 @@
+@media (max-width: 1024px) {
+  .cart {
+    margin-right: 1rem;
+
+    img {
+      width: 2rem;
+    }
+  }
+
+  .nav-container ul li a {
+    font-size: 1.2rem;
+  }
+
+  .hero {
+    width: 90%;
+    height: 35rem;
+    margin-top: 0;
+    padding-top: 0;
+    justify-content: flex-end;
+
+    article {
+      width: 100%;
+      height: 31.25rem;
+
+      p {
+        width: 30rem;
+        font-size: 1.2rem;
+        margin: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  .logos img {
+    width: auto;
+    height: 35px;
+  }
+  /* contacto */
+
+  .contacto {
+    height: 62.5rem;
+    margin-top: 3rem;
+  }
+  .mensaje {
+    width: 90%;
+    height: 30rem;
+  }
+
+  .mensaje,
+  .datos-container {
+    padding: 3rem;
+  }
+
+  .mensaje,
+  span h3 {
+    font-size: 1, 5rem;
+    color: map-get($color, blanco);
+    font-weight: 300;
+  }
+
+  .campo {
+    width: 70%;
+    height: 2rem;
+  }
+
+  .datos-container {
+    width: 90%;
+    height: 18rem;
+  }
+  span {
+    width: 100%;
+    height: 100%;
+  }
+
+  .mensaje h1,
+  span h2 {
+    color: #fff;
+    margin: 1rem;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  .nos-container {
+    width: 100%;
+    height: 100%;
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .div-nosotros {
+    width: 60%;
+    margin-bottom: 2rem;
+  }
+
+  .info-nosotros {
+    width: 100%;
+
+    img {
+      width: 50%;
+    }
+  }
+
+  .blog-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+  }
+}

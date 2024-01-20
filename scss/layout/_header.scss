@@ -1,0 +1,63 @@
+header {
+  background-color: $bgcHeader;
+  width: 100vw;
+  height: 3.5rem;
+  position: sticky;
+  box-shadow: 0rem 0.0625rem 0.3125rem map-get($color, rojo);
+  display: flex;
+  flex-direction: row-reverse;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.nav-container {
+  width: 90%;
+  @include flex(row, center, center);
+
+  ul {
+    list-style: none;
+    @include flex(row, flex-end, center);
+    gap: 3.5rem;
+
+    li {
+      a {
+        color: map-get($color, blanco);
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 3.5;
+
+        &:hover {
+          color: #fff;
+          font-weight: 800;
+          text-shadow: 0rem 0rem 0.625rem map-get($color, rojo),
+            0rem 0rem 1.25rem map-get($color, rojo),
+            0rem 0rem 2.5rem map-get($color, rojo),
+            0rem 0rem 5rem map-get($color, rojo);
+        }
+      }
+    }
+  }
+}
+
+.check-btn {
+  font-size: 30px;
+  line-height: 3.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.cart {
+  color: map-get($color, blanco);
+  width: 5%;
+  @include flex(row, center, center);
+
+  img {
+    width: 2.5rem;
+  }
+}

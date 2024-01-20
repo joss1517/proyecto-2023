@@ -1,0 +1,138 @@
+@media (max-width: 425px) {
+  header {
+    max-width: 100vw;
+  }
+
+  .check-btn {
+    width: 80%;
+    margin-left: 1rem;
+  }
+  .cart {
+    width: 10%;
+
+    img {
+      width: 30px;
+    }
+  }
+
+  .hero {
+    height: 12.5rem;
+
+    article {
+      width: 100%;
+      justify-content: flex-start;
+      margin-top: 5rem;
+      padding: 0;
+      top: -1rem;
+
+      h1 {
+        margin: 0;
+        margin-bottom: 2rem;
+        padding: 0.625rem;
+        font-size: 3rem;
+        text-shadow: 0rem 0rem 0.3rem map-get($color, rojo),
+          0rem 0rem 0.8rem map-get($color, rojo),
+          0rem 0rem 1rem map-get($color, rojo),
+          0rem 0rem 2rem map-get($color, rojo);
+      }
+    }
+  }
+
+  .hero .hero article .hero article p {
+    width: 80%;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: map-get($color, blanco);
+  }
+
+  .fondo {
+    background: #000000e1;
+  }
+
+  body {
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    width: 100vw;
+  }
+
+  .img img {
+    height: 10rem;
+  }
+
+  .logos img {
+    height: 1.2rem;
+    margin: 15px;
+  }
+
+  .pie-de-pagina p {
+    font-size: 1.8rem;
+  }
+
+  .campo {
+    width: 90%;
+  }
+
+  .mensaje,
+  .datos-container {
+    border-radius: 1rem;
+  }
+
+  .mensaje h3,
+  span p {
+    font-size: 1rem;
+  }
+
+  .nos-container {
+    padding: 0;
+    margin-top: 4rem;
+  }
+
+  .div-nosotros {
+    width: 80%;
+
+    img {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 0.3125rem 2rem 0.3125rem 2rem;
+    }
+  }
+
+  .info-nosotros {
+    width: 80%;
+
+    aside {
+      p {
+        width: 100;
+        font-size: 1rem;
+      }
+    }
+
+    img {
+      width: 70%;
+      margin-bottom: 0;
+    }
+  }
+
+  .blog-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+  }
+
+  .descripcion,
+  .descripcion-p {
+    color: map-get($color, negro);
+    font-size: 1rem;
+  }
+
+  .descripcion {
+    font-size: 1.5rem;
+  }
+}

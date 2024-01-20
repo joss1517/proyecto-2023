@@ -1,0 +1,71 @@
+.store-container {
+  width: 96%;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  @include grid;
+}
+
+.card-store {
+  width: 100%;
+  position: relative;
+  height: auto;
+  margin: auto;
+  padding-top: 1.25rem;
+  display: block;
+
+  &:hover .card-inf {
+    border-radius: 10px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.grid-item {
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  @include flex(row, center, center);
+
+  img {
+    width: 15.625rem;
+    height: auto;
+    border-radius: 0.625rem;
+    box-shadow: 0.0625rem;
+  }
+}
+
+.card-inf {
+  position: absolute;
+  top: 1.25rem;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background-color: $bgcTienda;
+  color: map-get($color, blanco);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 2 ease-in-out;
+
+  p {
+    font-size: 1.2rem;
+    margin: 0.5rem;
+  }
+
+  div {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border: thin solid map-get($color, blanco);
+    @include flex(column, space-evenly, stretch);
+
+    h3 {
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+  }
+}

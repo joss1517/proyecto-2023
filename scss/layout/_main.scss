@@ -1,0 +1,68 @@
+.hero {
+  width: 80vh;
+  margin-left: auto;
+  margin-right: auto;
+
+  article {
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+    @include flex(column, center, center);
+    flex-wrap: wrap;
+
+    h1 {
+      color: map-get($color, blanco);
+      font-size: 4rem;
+      font-weight: 600;
+      text-align: center;
+      text-shadow: 0rem 0rem 0.625rem map-get($color, rojo),
+        0rem 0rem 1.25rem map-get($color, rojo),
+        0rem 0rem 2.25rem map-get($color, rojo),
+        0rem 0rem 5rem map-get($color, rojo);
+      padding: 2rem;
+    }
+
+    p {
+      width: 80%;
+      color: map-get($color, blanco);
+      font-weight: 300;
+      font-size: 1.5rem;
+      text-align: center;
+      margin: 1.5rem 1.5rem;
+    }
+  }
+}
+
+.marcas {
+  background: map-get($color, blanco);
+  width: 100%;
+  height: 160px;
+  padding: 16px;
+  margin-top: 48px;
+  @include flex(column, center, space-evenly);
+  z-index: auto;
+
+  p {
+    font-size: 32px;
+    font-weight: 300;
+    color: map-get($color, negro);
+    text-align: center;
+  }
+}
+
+.texto {
+  width: 100%;
+  height: 80px;
+}
+
+.logos {
+  width: 100%;
+  height: 80px;
+  @include flex(row, space-evenly, center);
+  flex-wrap: wrap;
+
+  img {
+    width: auto;
+    height: 48px;
+  }
+}

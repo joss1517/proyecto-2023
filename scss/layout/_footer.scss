@@ -1,0 +1,34 @@
+footer {
+  background-color: $bgcHeader;
+  width: 100vw;
+  height: 48px;
+  bottom: 0;
+  position: fixed;
+  @include flex(row, space-evenly, center);
+  z-index: 1;
+
+  div {
+    p {
+      font-size: 16px;
+      color: map-get($color, blanco);
+      font-weight: 300;
+      position: static;
+    }
+  }
+}
+
+.contactos {
+  img {
+    width: 24px;
+    height: auto;
+    margin-right: 1.5rem;
+    color: map-get($color, negro);
+
+    &:hover {
+      width: 30px;
+      height: auto;
+      filter: drop-shadow(3px 3px 5px map-get($color, rojo));
+      transition: 5ms;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.blog-container {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+}
+
+.descripcion,
+.descripcion-p {
+  color: map-get($color, negro);
+  font-size: 1.5rem;
+}
+
+.descripcion {
+  font-size: 2rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: $bgcHeader;
+}
