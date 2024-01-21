@@ -1,13 +1,13 @@
 .btn-1 {
   display: inline-block;
   padding: 13px 35px;
-  background-color: #025dc5;
+  background-color: #f61243;
   color: #fff;
   font-size: 1.2rem;
   font-weight: 600;
   margin-top: 2rem;
   margin-left: 0.75rem;
-  border: medium solid #002752;
+  border: medium solid map-get($color, blanco);
   border-radius: 0.5rem;
   cursor: pointer;
 }
