@@ -1,13 +1,13 @@
 .btn-1 {
-  display: inline-block;
+  background-color: $bgcHeader;
   padding: 13px 35px;
-  background-color: #f61243;
-  color: #fff;
+  color: map-get($color, rojo);
   font-size: 1.2rem;
   font-weight: 600;
   margin-top: 2rem;
   margin-left: 0.75rem;
-  border: medium solid map-get($color, blanco);
+  border: thin solid map-get($color, rojo);
+  box-shadow: 0rem 0.0625rem 0.3125rem map-get($color, rojo);
   border-radius: 0.5rem;
   cursor: pointer;
 }
